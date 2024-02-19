@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  webpage:
+    container_name: linuxipsum-website
+    image: linuxipsum-website
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "20245:80"
