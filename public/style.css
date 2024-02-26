@@ -9,10 +9,15 @@ body {
   font-family: "Terminus";
   background-color: #000000;
   color: #20db8f;
-  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
 }
 
 /* components specific styles */
+
+main {
+  min-height: 100dvh;
+}
 
 .title-container {
   width: 100%;
@@ -92,6 +97,32 @@ body {
 .lorem-form-button {
   height: 30px;
   margin-top: 10px;
+}
+
+.footer {
+  margin: 0;
+  height: 200px;
+  background-color: #212121;
+  color: #ffffff;
+}
+
+p.footer {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+span.footer {
+  display: flex;
+  align-items: center;
+}
+
+img.footer {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
 }
 
 /* fonts */
