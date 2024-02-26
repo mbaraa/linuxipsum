@@ -1,0 +1,121 @@
+/* global styles */
+
+html,
+div {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Terminus";
+  background-color: #000000;
+  color: #20db8f;
+  min-height: 100dvh;
+}
+
+/* components specific styles */
+
+.title-container {
+  width: 100%;
+  text-align: center;
+}
+
+.title-sub {
+  font-size: 2rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .title {
+    font-size: 10rem;
+  }
+}
+
+.lorem-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.lorem-text {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.lorem-generator {
+  width: 100%;
+  margin: auto;
+  border-top: 1px solid #ffffff;
+  padding: 40px 0px 40px 0px;
+}
+
+.lorem-generator-title {
+  width: 100%;
+  text-align: center;
+}
+
+.lorem-form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .lorem-form {
+    width: 400px;
+  }
+}
+
+.lorem-form-item {
+  width: 100%;
+  height: 20px;
+}
+
+.lorem-form-button {
+  height: 30px;
+  margin-top: 10px;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Terminus";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/TerminusTTF-4.49.3.ttf");
+}
+
+@font-face {
+  font-family: "Terminus";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/TerminusTTF-Bold-4.49.3.ttf");
+}
+
+@font-face {
+  font-family: "Terminus";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/TerminusTTF-Italic-4.49.3.ttf");
+}
