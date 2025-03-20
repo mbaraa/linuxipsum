@@ -1,16 +1,16 @@
-FROM golang:1.22-alpine as build
+FROM golang:1.22-alpine AS build
 
 WORKDIR /app
 COPY . .
 
 RUN go build -ldflags="-w -s"
 
-FROM alpine:latest as run
+FROM alpine:latest AS run
 
 WORKDIR /app
 
-COPY --from=build /app/linuxipsum ./run
+COPY --from=build /app/linuxipsum ./linuxipsum
 
 EXPOSE 80
 
-CMD ["./run"]
+CMD ["./linuxipsum"]
